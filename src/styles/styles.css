@@ -51,15 +51,22 @@ footer {
       color: white; }
 
 #about-me .avatar {
-  height: 250px; }
+  height: 250px;
+  margin: 0 auto;
+  text-align: center; }
 
 #about-me .personal-info {
   border-bottom: 1px solid #e1e1e1;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
   margin-bottom: 30px; }
-  #about-me .personal-info .row {
+  #about-me .personal-info .info {
     margin-bottom: 15px; }
   #about-me .personal-info span {
     color: #5a5a5a; }
   #about-me .personal-info .detail {
     color: #222; }
+
+@media (max-width: 736px) {
+  #about-me .personal-info {
+    margin-top: 20px;
+    padding-bottom: 20px; } }

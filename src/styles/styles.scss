@@ -74,13 +74,14 @@ footer {
 #about-me {
     .avatar {
         height: 250px;
+        margin: 0 auto;
+        text-align: center;
     }
     .personal-info {
         border-bottom: 1px solid #e1e1e1;
-        padding-bottom: 30px;
+        padding-bottom: 15px;
         margin-bottom: 30px;
-
-        .row {
+        .info {
             margin-bottom: 15px;
         }
         span {
@@ -88,6 +89,15 @@ footer {
         }
         .detail {
             color: $text-color;
+        }
+    }
+}
+
+@media (max-width: 736px) {
+    #about-me {
+        .personal-info {
+            margin-top: 20px;
+            padding-bottom: 20px;
         }
     }
 }
