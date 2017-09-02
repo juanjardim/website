@@ -20,7 +20,7 @@
       "prefix": "app",
       "styles": [
         "styles/bootstrap/css/bootstrap.min.css",
-        "styles/styles.css"
+        "styles/app.css"
       ],
       "scripts": [
         "scripts/vendors/jquery.min.js",
