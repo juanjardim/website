@@ -22,12 +22,7 @@
         "styles/bootstrap/css/bootstrap.min.css",
         "styles/app.css"
       ],
-      "scripts": [
-        "scripts/vendors/jquery.min.js",
-        "scripts/vendors/popper.min.js",
-        "scripts/vendors/popper.min.js.map",
-        "scripts/vendors/bootstrap.min.js"
-      ],
+      "scripts": [],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
