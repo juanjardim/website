@@ -1,10 +1,20 @@
-$main-color: #25274D;
-$secondary-color: #464866;
+$dark-primary-color: #3F51B5;
+$default-primary-color: #303F9F;
+$light-primary-color: #C5CAE9;
+$text-primary-color: #FFFFFF;
+$accent-color: #4CAF50;
 $grey: #AAABB8;
 $ocean-blue: #2E9CCA;
 $green: #29648A;
-$text-color: #222;
-$text-color-sub: #a8a8a8;
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$divider-color :#BDBDBD;
+html,
+body {
+    line-height: 1.45rem;
+    font-size: 16px;
+}
+
 h2,
 h3 {
     text-transform: uppercase;
@@ -12,12 +22,12 @@ h3 {
 
 h2 {
     font-size: 24px;
-    color: $text-color;
+    color: $primary-text-color;
 }
 
 h3 {
     font-size: 18px;
-    color: $text-color-sub;
+    color: $secondary-text-color;
 }
 
 header {
@@ -26,7 +36,7 @@ header {
     padding-bottom: 24px;
     margin-top: 15px;
     margin-bottom: 28px;
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid $divider-color;
     position: relative;
     h3 {
         margin-top: 10px;
@@ -36,7 +46,7 @@ header {
         content: "";
         height: 16px;
         width: 16px;
-        background: $main-color;
+        background: $dark-primary-color;
         border-radius: 50%;
         bottom: 0;
         transform: translateY(50%);
@@ -44,28 +54,28 @@ header {
 }
 
 p {
-    margin-bottom: 0px;
+    margin-bottom: 15px;
     color: text-color;
 }
 
 nav {
-    background-color: $ocean-blue;
+    background-color: $default-primary-color;
     .navbar-brand,
     .nav-link {
-        color: white;
+        color: $text-primary-color;
     }
 }
 
 footer {
     text-align: center;
-    background-color: $green;
-    color: white;
+    background-color: $dark-primary-color;
+    color: $text-primary-color;
     .contacts {
         p {
             padding-top: 20px;
             padding-bottom: 20px;
             a {
-                color: white;
+                color: $text-primary-color;
             }
         }
     }
@@ -78,17 +88,36 @@ footer {
         text-align: center;
     }
     .personal-info {
-        border-bottom: 1px solid #e1e1e1;
+        border-bottom: 1px solid $divider-color;
         padding-bottom: 15px;
         margin-bottom: 30px;
         .info {
             margin-bottom: 15px;
         }
         span {
-            color: #5a5a5a;
+            color: $secondary-text-color;
+            a {
+                color: $secondary-text-color;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
         .detail {
-            color: $text-color;
+            color: $primary-text-color;
+        }
+    }
+    .personal-description {
+        .resume {
+            border-color: $secondary-text-color;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: $primary-text-color;
+            border-radius: 2px;
+            &:hover {
+                border-color: $dark-primary-color;
+                color: $dark-primary-color;
+            }
         }
     }
 }
