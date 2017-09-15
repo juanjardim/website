@@ -71,12 +71,10 @@ footer {
     background-color: $dark-primary-color;
     color: $text-primary-color;
     .contacts {
-        p {
-            padding-top: 20px;
-            padding-bottom: 20px;
-            a {
-                color: $text-primary-color;
-            }
+        padding-top: 20px;
+        padding-bottom: 20px;
+        a {
+            color: $text-primary-color;
         }
     }
 }

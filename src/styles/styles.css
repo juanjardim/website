@@ -49,10 +49,10 @@ footer {
   text-align: center;
   background-color: #3F51B5;
   color: #FFFFFF; }
-  footer .contacts p {
+  footer .contacts {
     padding-top: 20px;
     padding-bottom: 20px; }
-    footer .contacts p a {
+    footer .contacts a {
       color: #FFFFFF; }
 
 #about-me .avatar {
