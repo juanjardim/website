@@ -41,8 +41,11 @@ p {
 
 nav {
   background-color: #303F9F; }
-  nav .navbar-brand,
-  nav .nav-link {
+  nav .navbar-brand {
+    color: #FFFFFF; }
+  nav .nav-item .nav-link {
+    color: #C5CAE9; }
+  nav .nav-item.active .nav-link {
     color: #FFFFFF; }
 
 footer {
@@ -54,6 +57,9 @@ footer {
     padding-bottom: 20px; }
     footer .contacts a {
       color: #FFFFFF; }
+
+section {
+  margin-bottom: 30px; }
 
 #about-me .avatar {
   height: 250px;
@@ -84,6 +90,19 @@ footer {
   #about-me .personal-description .resume:hover {
     border-color: #3F51B5;
     color: #3F51B5; }
+
+#skills .sub-heading {
+  text-align: center;
+  background-color: #AAABB8;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+  #skills .sub-heading h3 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: #FFFFFF; }
+
+#skills .education {
+  padding-right: 0px; }
 
 @media (max-width: 736px) {
   #about-me .personal-info {

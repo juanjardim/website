@@ -8,7 +8,7 @@ $ocean-blue: #2E9CCA;
 $green: #29648A;
 $primary-text-color: #212121;
 $secondary-text-color: #757575;
-$divider-color :#BDBDBD;
+$border-color :#BDBDBD;
 html,
 body {
     line-height: 1.45rem;
@@ -36,7 +36,7 @@ header {
     padding-bottom: 24px;
     margin-top: 15px;
     margin-bottom: 28px;
-    border-bottom: 1px solid $divider-color;
+    border-bottom: 1px solid $border-color;
     position: relative;
     h3 {
         margin-top: 10px;
@@ -60,9 +60,18 @@ p {
 
 nav {
     background-color: $default-primary-color;
-    .navbar-brand,
-    .nav-link {
+    .navbar-brand {
         color: $text-primary-color;
+    }
+    .nav-item {
+        .nav-link {
+            color: $light-primary-color;
+        }
+        &.active {
+            .nav-link {
+                color: $text-primary-color;
+            }
+        }
     }
 }
 
@@ -79,6 +88,10 @@ footer {
     }
 }
 
+section {
+    margin-bottom: 30px;
+}
+
 #about-me {
     .avatar {
         height: 250px;
@@ -86,7 +99,7 @@ footer {
         text-align: center;
     }
     .personal-info {
-        border-bottom: 1px solid $divider-color;
+        border-bottom: 1px solid $border-color;
         padding-bottom: 15px;
         margin-bottom: 30px;
         .info {
@@ -117,6 +130,24 @@ footer {
                 color: $dark-primary-color;
             }
         }
+    }
+}
+
+#skills{
+    .sub-heading{
+        text-align: center;
+        background-color: $grey;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        h3 {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            color: $text-primary-color;
+        }
+    }
+
+    .education{
+        padding-right: 0px;
     }
 }
 
