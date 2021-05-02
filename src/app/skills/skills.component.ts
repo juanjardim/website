@@ -5,5 +5,4 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './skills.component.html'
 })
 export class SkillsComponent {
-
 }
