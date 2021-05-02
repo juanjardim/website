@@ -1,0 +1,67 @@
+$dark-primary-color: #3f51b5;
+$default-primary-color: #3949ab;
+$light-primary-color: #c5cae9;
+$text-primary-color: #ffffff;
+$accent-color: #4caf50;
+$grey: #eceff1;
+$ocean-blue: #2e9cca;
+$green: #29648a;
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$border-color: #bdbdbd;
+
+#about-me {
+  .avatar {
+    height: 250px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .personal-info {
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    .info {
+      margin-bottom: 15px;
+    }
+    span {
+      color: $secondary-text-color;
+      a {
+        color: $secondary-text-color;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .detail {
+      color: $primary-text-color;
+    }
+  }
+  .personal-description {
+    .resume {
+      border-color: $secondary-text-color;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: $primary-text-color;
+      border-radius: 2px;
+      &:hover {
+        border-color: $dark-primary-color;
+        color: $dark-primary-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 736px) {
+  #about-me {
+    .personal-info {
+      margin-top: 20px;
+      padding-bottom: 20px;
+    }
+    .personal-description {
+      .resume {
+        width: 100%;
+        margin-top: 15px;
+      }
+    }
+  }
+}

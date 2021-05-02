@@ -1,0 +1,24 @@
+$dark-primary-color: #3f51b5;
+$default-primary-color: #3949ab;
+$light-primary-color: #c5cae9;
+$text-primary-color: #ffffff;
+$accent-color: #4caf50;
+$grey: #eceff1;
+$ocean-blue: #2e9cca;
+$green: #29648a;
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$border-color: #bdbdbd;
+
+footer {
+  text-align: center;
+  background-color: $dark-primary-color;
+  color: $text-primary-color;
+  .contacts {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    a {
+      color: $text-primary-color;
+    }
+  }
+}
