@@ -32,23 +32,13 @@ h3 {
 header {
   text-align: center;
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 7px;
   margin-top: 15px;
   margin-bottom: 28px;
   border-bottom: 1px solid $border-color;
   position: relative;
   h3 {
     margin-top: 10px;
-  }
-  &:before {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    background: $dark-primary-color;
-    border-radius: 50%;
-    bottom: 0;
-    transform: translateY(50%);
   }
 }
 

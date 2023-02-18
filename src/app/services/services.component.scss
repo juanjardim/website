@@ -11,7 +11,7 @@ $secondary-text-color: #757575;
 $border-color: #bdbdbd;
 
 #services {
-  padding-bottom: 70px;
+  padding-bottom: 50px;
   .areas {
     .fa {
       font-size: 60px;
@@ -30,7 +30,10 @@ $border-color: #bdbdbd;
     margin-bottom: 20px;
   }
   .salesforce-cert {
-    width: 200px;
+    width: 130px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
   }
 }
 
