@@ -30,7 +30,7 @@ $border-color: #bdbdbd;
     margin-bottom: 20px;
   }
   .salesforce-cert {
-    width: 130px;
+    width: 90px;
     margin-bottom: 10px;
     max-width: 100%;
     height: auto;
@@ -68,4 +68,42 @@ $border-color: #bdbdbd;
       background-image: url("/assets/net.svg");
     }
   }
+}
+
+
+.certification-image__container {
+  width: 64px;
+  height: 64px;
+  margin-bottom: auto;
+  margin-left: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 0;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  min-width: 18%;
+ 
+}
+
+.active-status {
+  font-weight: bold;
+  color:#008000
+}
+
+.actions_subtext {
+  margin-bottom: 0px;
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+a {
+  color: #3f51b5;
 }
