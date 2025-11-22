@@ -1,27 +1,67 @@
-$dark-primary-color: #3f51b5;
-$default-primary-color: #3949ab;
-$light-primary-color: #c5cae9;
-$text-primary-color: #ffffff;
-$accent-color: #4caf50;
-$grey: #eceff1;
-$ocean-blue: #2e9cca;
-$green: #29648a;
-$primary-text-color: #212121;
-$secondary-text-color: #757575;
-$border-color: #bdbdbd;
+@import '../../variables';
+
 nav {
-  background-color: $default-primary-color;
-  .navbar-brand {
-    color: $text-primary-color;
+  background-color: $surface-color;
+  box-shadow: $shadow-sm;
+  padding: 1rem 0;
+  transition: $transition-base;
+
+  &.scrolled {
+    box-shadow: $shadow-md;
   }
-  .nav-item {
-    .nav-link {
-      color: $light-primary-color;
+
+  .navbar-brand {
+    color: $primary-color;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+
+    &:hover {
+      color: $secondary-color;
     }
+  }
+
+  .navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+
+    &:focus {
+      box-shadow: none;
+      outline: 2px solid $secondary-color;
+    }
+  }
+
+  .nav-item {
+    margin-left: 1rem;
+
+    .nav-link {
+      color: $text-secondary;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      transition: $transition-base;
+
+      &:hover {
+        color: $secondary-color;
+        background-color: rgba($secondary-color, 0.05);
+      }
+    }
+
     &.active {
       .nav-link {
-        color: $text-primary-color;
+        color: $secondary-color;
+        background-color: rgba($secondary-color, 0.1);
+        font-weight: 600;
       }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  nav {
+    .nav-item {
+      margin-left: 0;
+      margin-top: 0.5rem;
     }
   }
 }

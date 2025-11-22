@@ -44,3 +44,19 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Environment files (sensitive data)
+.env
+.env.local
+.env.*.local
+environment.prod.ts
+environment.staging.ts
+
+# Additional log files
+*.log
+*.tgz
+
+# Personal notes
+notes.txt
+TODO.txt
+NOTES.md

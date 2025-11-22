@@ -1,52 +1,91 @@
-$dark-primary-color: #3f51b5;
-$default-primary-color: #3949ab;
-$light-primary-color: #c5cae9;
-$text-primary-color: #ffffff;
-$accent-color: #4caf50;
-$grey: #eceff1;
-$ocean-blue: #2e9cca;
-$green: #29648a;
-$primary-text-color: #212121;
-$secondary-text-color: #757575;
-$border-color: #bdbdbd;
+@import 'variables';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 html,
 body {
-  line-height: 1.45rem;
-  font-size: 16px;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-primary;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
+h1,
 h2,
-h3 {
-  text-transform: uppercase;
+h3,
+h4,
+h5,
+h6 {
+  color: $primary-color;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 24px;
-  color: $primary-text-color;
-}
-
-h3 {
-  font-size: 18px;
-  color: $secondary-text-color;
-}
-header {
-  text-align: center;
-  padding-top: 24px;
-  padding-bottom: 7px;
-  margin-top: 15px;
-  margin-bottom: 28px;
-  border-bottom: 1px solid $border-color;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   position: relative;
-  h3 {
-    margin-top: 10px;
+  display: inline-block;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 4px;
+    background-color: $secondary-color;
+    margin-top: 0.5rem;
+    border-radius: 2px;
   }
 }
 
+h3 {
+  font-size: 1.5rem;
+  color: $text-secondary;
+}
+
 p {
-  margin-bottom: 15px;
-  color: text-color;
+  margin-bottom: 1.5rem;
+  color: $text-primary;
+}
+
+a {
+  color: $secondary-color;
+  text-decoration: none;
+  transition: $transition-base;
+
+  &:hover {
+    color: $secondary-color-hover;
+    text-decoration: none;
+  }
 }
 
 section {
-  margin-bottom: 30px;
+  padding: 4rem 0;
+}
+
+.btn {
+  font-family: $font-family-base;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: $transition-base;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-primary {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  color: $surface-color;
+
+  &:hover {
+    background-color: $secondary-color-hover;
+    border-color: $secondary-color-hover;
+    transform: translateY(-2px);
+    box-shadow: $shadow-md;
+  }
 }
