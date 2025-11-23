@@ -1,0 +1,23 @@
+<section id="experience">
+    <div class="container">
+        <header>
+            <h2>Experience</h2>
+            <h3>My professional journey</h3>
+        </header>
+        <div class="row">
+            <!-- Work Experience -->
+            <div class="col-12 work-experience">
+                <div class="time-line">
+                    <ul>
+                        <li *ngFor="let exp of experiences$ | async">
+                            <div class="time-period">{{ exp.timePeriod }}</div>
+                            <div class="job-position">{{ exp.position }}</div>
+                            <div class="company"><i class="fas fa-map-marker-alt"></i> {{ exp.company }}</div>
+                            <div class="job-description">{{ exp.description }}</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

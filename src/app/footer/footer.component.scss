@@ -1,24 +1,25 @@
-$dark-primary-color: #3f51b5;
-$default-primary-color: #3949ab;
-$light-primary-color: #c5cae9;
-$text-primary-color: #ffffff;
-$accent-color: #4caf50;
-$grey: #eceff1;
-$ocean-blue: #2e9cca;
-$green: #29648a;
-$primary-text-color: #212121;
-$secondary-text-color: #757575;
-$border-color: #bdbdbd;
+@use '../../variables' as vars;
 
 footer {
   text-align: center;
-  background-color: $dark-primary-color;
-  color: $text-primary-color;
+  background-color: vars.$primary-color; // Slate 900
+  color: vars.$text-light;
+  padding: 2rem 0; // Add some padding
+  margin-top: auto; // Ensure it stays at the bottom if page is short
+
   .contacts {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    font-size: 0.95rem;
+
     a {
-      color: $text-primary-color;
+      color: vars.$secondary-color; // Blue 500
+      text-decoration: none;
+      transition: vars.$transition-base;
+      font-weight: 500;
+
+      &:hover {
+        color: vars.$secondary-color-hover;
+        text-decoration: underline;
+      }
     }
   }
 }

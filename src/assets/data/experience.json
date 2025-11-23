@@ -1,0 +1,38 @@
+[
+  {
+    "timePeriod": "February 2024 - Present",
+    "position": "Salesforce Engineering Team Lead | Architect",
+    "company": "Frontiers",
+    "description": "As the Salesforce Engineering Team Lead and Architect, I spearhead digital transformation by merging deep technical expertise with strategic people leadership. I manage a team of 8 Salesforce engineers, driving both architectural excellence and a high-performance, collaborative culture. Key achievements include pioneering AI strategy (Agentforce & ApexGuru), establishing Data Cloud architecture, and implementing process optimizations that reduced manual case volume by 10%. I ensure technical decisions align with business goals, acting as a critical bridge between development and product management."
+  },
+  {
+    "timePeriod": "April 2022 - February 2024",
+    "position": "Salesforce Technical Lead",
+    "company": "Frontiers",
+    "description": "As Salesforce Technical Lead, I served as the primary technical reference point for the ecosystem, driving architectural integrity and fostering a culture of continuous improvement. My responsibilities extended beyond code to include full ownership of the Agile/Scrum process, ensuring continuous delivery through rigorous Sprint Planning and Retrospectives. I established new Knowledge Sharing sessions and migrated documentation to Confluence, significantly improving team alignment and accessibility. Crucially, I demonstrated Crisis Leadership by maintaining team morale and business continuity during a major corporate restructuring."
+  },
+  {
+    "timePeriod": "October 2020 - February 2022",
+    "position": "Salesforce Developer",
+    "company": "Frontiers",
+    "description": "As a Salesforce Developer, I drove a critical technical modernization initiative across Sales and Service. My focus was on replacing outdated systems with scalable architecture. I pioneered the adoption of Salesforce Flow, leading the full migration from legacy Process Builders and Workflows. This clean-up effort, combined with refactoring legacy Apex, resulted in a 40% reduction in code volume, significantly lowering technical debt. I also revolutionized our deployment process by implementing a CI/CD pipeline using Azure DevOps, replacing the error-prone Change Set process and accelerating release cycles."
+  },
+  {
+    "timePeriod": "2016 - September 2020",
+    "position": "Software Engineer",
+    "company": "IMD Business School",
+    "description": "This role was pivotal as it marked my first interaction with the Salesforce platform. I focused heavily on front-end development and maintenance for the IMD Salesforce Community. This included leading the creation and improvement of custom Lightning Aura and Web Components to enhance user experience and functionality. Concurrently, I utilized my traditional development background (.NET MVC and EPiServer) to maintain and evolve the broader web ecosystem, all while managing the project lifecycle using Scrum and Agile methodologies and coordinating with external consultants."
+  },
+  {
+    "timePeriod": "2012 - 2016",
+    "position": "Web Developer",
+    "company": "NOS Madeira (Portugal)",
+    "description": "Here, I worked with: emberJS and improve my knowledge in HTML5, Javascript and Bootstrap. I also worked with Zend Framework and Node Js as backend technologies."
+  },
+  {
+    "timePeriod": "2012 - 2015",
+    "position": "Invited Assistant Professor",
+    "company": "University of Madeira",
+    "description": "Here, I taught the practical lecture of Computer Architecture course, where we explored VHDL, assembly and C."
+  }
+]

@@ -3,22 +3,27 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { EducationComponent } from './education/education.component';
+import { CertificationsComponent } from './certifications/certifications.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavigationComponent } from './navigation/navigation.component';
-import { ServicesComponent } from './services/services.component';
-import { SkillsComponent } from './skills/skills.component';
+
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
-    FooterComponent,
     NavigationComponent,
-    ServicesComponent,
-    SkillsComponent
+    AboutComponent,
+    ExperienceComponent,
+    EducationComponent,
+    CertificationsComponent,
+    FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

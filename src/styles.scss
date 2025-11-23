@@ -13,6 +13,18 @@ body {
   scroll-behavior: smooth;
 }
 
+main>* {
+  display: block;
+
+  &:nth-child(odd) {
+    background-color: $surface-color;
+  }
+
+  &:nth-child(even) {
+    background-color: #f8fafc;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -64,7 +76,11 @@ a {
 }
 
 section {
-  padding: 4rem 0;
+  padding: 3rem 0;
+
+  @media (max-width: 768px) {
+    padding: 1.5rem 0;
+  }
 }
 
 .btn {

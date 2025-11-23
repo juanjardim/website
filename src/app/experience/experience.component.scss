@@ -1,0 +1,207 @@
+@use '../../variables' as vars;
+@use 'sass:color';
+
+#experience {
+  // padding: 6rem 0; // Handled globally
+  // background-color: vars.$background-color; // Handled globally
+
+  .sub-heading {
+    background: linear-gradient(135deg, vars.$primary-color 0%, color.adjust(vars.$primary-color, $lightness: -10%) 100%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: vars.$shadow-md;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    transition: vars.$transition-base;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
+      pointer-events: none;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: vars.$shadow-lg;
+    }
+
+    h3 {
+      margin: 0;
+      color: vars.$surface-color;
+      font-size: 1.4rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+
+      span {
+        height: 56px;
+        width: 56px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        color: vars.$surface-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        font-size: 1.5rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+
+  .time-line {
+    position: relative;
+    padding-left: 0.5rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(to bottom,
+          vars.$secondary-color 0%,
+          rgba(vars.$secondary-color, 0.6) 50%,
+          rgba(vars.$secondary-color, 0.2) 100%);
+      border-radius: 3px;
+      box-shadow: 0 0 10px rgba(vars.$secondary-color, 0.3);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        position: relative;
+        margin-bottom: 3rem;
+        margin-left: 1rem;
+        background-color: vars.$surface-color;
+        padding: 1.5rem;
+        padding-left: 2rem;
+        border-radius: 12px;
+        box-shadow: vars.$shadow-sm;
+        transition: vars.$transition-base;
+        border-left: 3px solid transparent;
+
+        &:hover {
+          transform: translateX(5px);
+          box-shadow: vars.$shadow-md;
+          border-left-color: vars.$secondary-color;
+        }
+
+        &:hover::before {
+          background-color: vars.$secondary-color;
+          transform: scale(1.25);
+          box-shadow: 0 0 0 6px rgba(vars.$secondary-color, 0.2), 0 0 12px rgba(vars.$secondary-color, 0.4);
+        }
+
+        .time-period {
+          display: inline-block;
+          background: linear-gradient(135deg, vars.$secondary-color 0%, color.adjust(vars.$secondary-color, $lightness: -10%) 100%);
+          color: vars.$surface-color;
+          font-size: 0.875rem;
+          font-weight: 700;
+          padding: 0.4rem 1rem;
+          border-radius: 25px;
+          margin-bottom: 0.75rem;
+          box-shadow: 0 2px 8px rgba(vars.$secondary-color, 0.3);
+          letter-spacing: 0.5px;
+        }
+
+        .job-position {
+          color: vars.$primary-color;
+          font-size: 1.2rem;
+          font-weight: 700;
+          margin-bottom: 0.4rem;
+          line-height: 1.3;
+        }
+
+        .company {
+          color: vars.$secondary-color;
+          font-size: 1rem;
+          font-weight: 600;
+          margin-bottom: 0.75rem;
+          display: flex;
+          align-items: center;
+
+          i {
+            margin-right: 0.5rem;
+            font-size: 0.9rem;
+          }
+        }
+
+        .job-description,
+        .description {
+          color: vars.$text-secondary;
+          font-size: 0.95rem;
+          line-height: 1.6;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #experience {
+    padding: 4rem 0;
+
+    .sub-heading {
+      margin-bottom: 2rem;
+
+      h3 {
+        font-size: 1.2rem;
+
+        span {
+          height: 48px;
+          width: 48px;
+          font-size: 1.25rem;
+        }
+      }
+    }
+
+    .work-experience {
+      margin-bottom: 3rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .time-line {
+      padding-left: 1.5rem;
+
+      ul li {
+        padding: 1.25rem;
+        padding-left: 1.5rem;
+        margin-bottom: 2rem;
+        margin-left: 0.75rem;
+
+        &::before {
+          left: -1.25rem;
+        }
+
+        .job-position {
+          font-size: 1.1rem;
+        }
+
+        .company {
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+}

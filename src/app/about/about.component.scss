@@ -1,11 +1,11 @@
 @import '../../variables';
 
 #about-me {
-  padding: 6rem 0;
+  // padding: 6rem 0; // Handled globally
   background-color: $surface-color;
 
   header {
-    text-align: center;
+    text-align: left;
     margin-bottom: 4rem;
     border: none;
     padding: 0;

@@ -1,0 +1,46 @@
+<section id="certifications">
+    <div class="container">
+        <header>
+            <h2>Certifications</h2>
+            <h3>Salesforce</h3>
+        </header>
+        <div class="salesforce">
+            <div class="table-responsive">
+                <table class="certifications-table">
+                    <thead>
+                        <tr>
+                            <th>Badge</th>
+                            <th>Certification</th>
+                            <th>Status</th>
+                            <th>Issued</th>
+                            <th>Credential ID</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody *ngIf="certifications$ | async as certifications; else loading">
+                        <tr *ngFor="let cert of certifications">
+                            <td class="badge-cell">
+                                <img class="salesforce-cert" [src]="cert.badgeUrl" [alt]="cert.name" loading="lazy"
+                                    width="100" height="100">
+                            </td>
+                            <td class="cert-name">{{ cert.name }}</td>
+                            <td class="status-cell"><span class="active-status">{{ cert.status }}</span></td>
+                            <td>{{ cert.issued }}</td>
+                            <td>{{ cert.credentialId }}</td>
+                            <td>
+                                <a [href]="cert.verifyUrl" target="_blank" rel="noopener">View</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <ng-template #loading>
+                        <tbody>
+                            <tr>
+                                <td colspan="6" class="text-center">Loading certifications...</td>
+                            </tr>
+                        </tbody>
+                    </ng-template>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>

@@ -17,7 +17,7 @@ export class NavigationComponent implements OnInit {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const sections = ['about-me', 'skills'];
+    const sections = ['about-me', 'experience', 'education', 'certifications'];
     const scrollPosition = window.pageYOffset + 150; // Offset for navbar height
 
     for (const section of sections) {

@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Salesforce Certified Agentforce Specialist",
+    "badgeUrl": "assets/agentForce.png",
+    "status": "Active",
+    "issued": "Aug 2025",
+    "credentialId": "5141952",
+    "verifyUrl": "https://trailheadacademy.salesforce.com/certificate/exam-agentforce-specialist---AI-201"
+  },
+  {
+    "name": "Salesforce Certified Data Cloud Consultant",
+    "badgeUrl": "assets/dataCloud.png",
+    "status": "Active",
+    "issued": "Oct 2024",
+    "credentialId": "23546738",
+    "verifyUrl": "https://trailheadacademy.salesforce.com/certificate/exam-data-cloud---Data-Con-101"
+  },
+  {
+    "name": "Salesforce Certified System Architect",
+    "badgeUrl": "assets/SystemArchitect.png",
+    "status": "Active",
+    "issued": "Nov 2023",
+    "credentialId": "23546738",
+    "verifyUrl": "https://trailhead.salesforce.com/en/credentials/systemarchitect"
+  },
+  {
+    "name": "Salesforce Certified Platform Developer II",
+    "badgeUrl": "assets/PlatformDeveloperII.png",
+    "status": "Active",
+    "issued": "Jul 2022",
+    "credentialId": "23417033",
+    "verifyUrl": "https://trailhead.salesforce.com/en/credentials/platformdeveloperii"
+  },
+  {
+    "name": "Salesforce Certified Application Architect",
+    "badgeUrl": "assets/ApplicationArchitect.png",
+    "status": "Active",
+    "issued": "Nov 2021",
+    "credentialId": "23546737",
+    "verifyUrl": "https://trailhead.salesforce.com/en/credentials/applicationarchitect"
+  },
+  {
+    "name": "Salesforce Certified Platform Data Architect",
+    "badgeUrl": "assets/DataArchitect.png",
+    "status": "Active",
+    "issued": "Nov 2021",
+    "credentialId": "23183312",
+    "verifyUrl": "https://trailhead.salesforce.com/en/credentials/dataarchitect"
+  },
+  {
+    "name": "Salesforce Certified JavaScript Developer I",
+    "badgeUrl": "assets/JavaScriptDeveloperI.png",
+    "status": "Active",
+    "issued": "Aug 2021",
+    "credentialId": "23300092",
+    "verifyUrl": "https://trailhead.salesforce.com/en/credentials/javascriptdeveloperi"
+  },
+  {
+    "name": "Salesforce Certified Platform Sharing and Visibility Architect",
+    "badgeUrl": "assets/SharingandVisibilityArchitect.png",
+    "status": "Active",
+    "issued": "Mar 2021",
+    "credentialId": "23183313",
+    "verifyUrl": "https://trailhead.salesforce.com/en/credentials/sharingandvisibilityarchitect"
+  },
+  {
+    "name": "Salesforce Certified Platform App Builder",
+    "badgeUrl": "assets/PlatformAppBuilder.png",
+    "status": "Active",
+    "issued": "Feb 2020",
+    "credentialId": "22771092",
+    "verifyUrl": "https://trailhead.salesforce.com/en/credentials/platformappbuilder"
+  },
+  {
+    "name": "Salesforce Certified Platform Developer I",
+    "badgeUrl": "assets/PlatformDeveloperI.png",
+    "status": "Active",
+    "issued": "Sep 2019",
+    "credentialId": "22660859",
+    "verifyUrl": "https://trailhead.salesforce.com/en/credentials/platformdeveloperi"
+  },
+  {
+    "name": "Salesforce Certified Platform Administrator",
+    "badgeUrl": "assets/Administrator.png",
+    "status": "Active",
+    "issued": "Mar 2019",
+    "credentialId": "22660858",
+    "verifyUrl": "https://trailhead.salesforce.com/en/credentials/administrator"
+  }
+]
